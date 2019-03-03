@@ -1,8 +1,8 @@
-- name: PagPropina
+- name: pagPropina
   link: /pagpropina/
   new_window: false
   highlight: false
-- name: PagCafé
+- name: pagCafé
   link: /pagcafe/
   new_window: false
   highlight: false
