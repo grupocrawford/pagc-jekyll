@@ -34,6 +34,7 @@ nav {
     color: rgba(0,0,0,.8);
     transition: .2s ease-in-out;
     display: none;
+    color: black;
 
     @media #{$mid-point} {
       display: inline;
@@ -78,7 +79,7 @@ nav {
   }
 
   a.active {
-    color: #fff;
+    color: #385ea8;
   }
 
 }
