@@ -1,6 +1,14 @@
 ---
 title: PagC
 description:
+slider:
+  text_color: white
+  shadow_color: black
+  slides:
+    - url: /images/homepage_carousel/1.png
+    - url: /images/homepage_carousel/2.png
+    - url: /images/homepage_carousel/3.png
+
 ---
 
 <header class="partners">
@@ -15,28 +23,27 @@ description:
 </header>
 <section class="hero">
   <div class="text-container">
-    <!-- <h1 class="editable">Some text</strong></h1> -->
+    <h1 class="editable"><strong>Redefining Fair Trade Coffee</strong></h1>
     <!-- <p class="subtext editable">Some subtext</p> -->
     <!-- <div class="cta button alt"><a href="/sign-up/">Some link</a></div> -->
-    <div>
-      <img src="https://via.placeholder.com/600x400" alt="" class=" editable" />
+
+  </div>
+</section>
+{% include slider.html name="homepage_carousel" data=page.slider.slides %}
+
+<section class="testimonial">
+  <div class="container flex">
+    <div class="testimonial-block">
+      <div class="square-image"><img src="https://source.unsplash.com/6anudmpILw4/600x400" alt="Jim James" class="editable" /></div>
+      <blockquote>
+        <p class="editable">
+          A quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote qupte period
+        </p>
+        <p class="editable author">Author of quote - CEO of something</p>
+      </blockquote>
     </div>
   </div>
 </section>
-
-  <section class="testimonial">
-    <div class="container flex">
-      <div class="testimonial-block">
-        <div class="square-image"><img src="https://source.unsplash.com/6anudmpILw4/600x400" alt="Jim James" class="editable" /></div>
-        <blockquote>
-          <p class="editable">
-            A quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote qupte period
-          </p>
-          <p class="editable author">Author of quote - CEO of something</p>
-        </blockquote>
-      </div>
-    </div>
-  </section>
 
 <div class="content">
   <section>
