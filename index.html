@@ -1,13 +1,10 @@
 ---
 title: PagC
 description:
-slider:
-  text_color: white
-  shadow_color: black
-  slides:
-    - url: /images/homepage_carousel/1.png
-    - url: /images/homepage_carousel/2.png
-    - url: /images/homepage_carousel/3.png
+slides:
+  - url: /images/homepage_carousel/1.png
+  - url: /images/homepage_carousel/2.png
+  - url: /images/homepage_carousel/3.png
 
 ---
 
@@ -29,7 +26,7 @@ slider:
 
   </div>
 </section>
-{% include slider.html name="homepage_carousel" data=page.slider.slides %}
+{% include slider.html name="homepage_carousel" data=page.slides %}
 
 <section class="testimonial">
   <div class="container flex">
