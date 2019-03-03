@@ -1,6 +1,9 @@
 - name: Hacienda Venecia
-  link: /#/
+  link: http://www.haciendavenecia.com/
+  logo: /images/logo_haciendavenecia.png
 - name: Carcafe
-  link: /#/
+  link: https://carcafe.com.co/
+  logo: /images/logo_carcafe.jpg
 - name: Blue Bottle Coffee
-  link: /#/
+  link: https://bluebottlecoffee.com/
+  logo: /images/logo_bluebottle.png

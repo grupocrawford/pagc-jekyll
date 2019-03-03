@@ -7,7 +7,9 @@ description:
   <div class="container">
       Our Partners:
       {% for partner in site.data.partners %}
-      <a href="{{ partner.link }}" target="_blank">{{ partner.name }}</a>
+      <a href="{{ partner.link }}" target="_blank">
+        <img src="{{site.baseurl}}{{partner.logo}}" alt="{{partner.name}}" />
+      </a>
       {% endfor %}
   </div>
 </header>

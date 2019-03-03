@@ -12,6 +12,10 @@
       padding: 10px;
     }
   }
+  img {
+    height: 50px;
+    width: auto;
+  }
 }
 .bottom-cta {
   background: linear-gradient(to bottom, green 0%, $middle-gradient-color 100%);
