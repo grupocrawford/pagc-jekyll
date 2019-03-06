@@ -1,0 +1,64 @@
+defaults: &defaults
+  docker:
+    - image: circleci/ruby:2.5
+  environment:
+    BUNDLE_PATH: ~/repo/vendor/bundle
+  working_directory: ~/repo
+version: 2
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - rubygems-v1-{{ checksum "Gemfile.lock" }}
+            - rubygems-v1-fallback
+      - run:
+          name: Bundle Install
+          command: bundle check || bundle install
+      - save_cache:
+          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: Jekyll build
+          command: bundle exec jekyll build
+      # - run:
+          # name: HTMLProofer tests
+          # command: |
+            # bundle exec htmlproofer ./_site \
+              # --allow-hash-href \
+              # --check-favicon  \
+              # --check-html \
+              # --disable-external
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - ./*
+  deploy:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Install JRE
+          command: sudo apt-get install -y default-jre
+      - run:
+          name: Upload to S3
+          command: |
+            set -x
+            bundle exec s3_website push || true
+            java -cp $(bundle show s3_website)/*.jar s3.website.Push
+
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          # filters:
+            # branches:
+              # only: master

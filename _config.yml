@@ -9,8 +9,8 @@ google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: 
-description: 
+logo:
+description:
 author:
   name:
   email:
@@ -83,7 +83,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - LICENCE
+  - LICENSE
+  - vendor
 
 # -----------
 # CloudCannon

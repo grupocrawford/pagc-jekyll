@@ -1,10 +1,10 @@
 # You can remove the first two lines to have credentials read from
 # the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY or
 # ~/.aws/credentials.
-s3_id: "AKIAJF2HA4UIIKP4S3RQ"
-s3_secret: "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"
+#s3_id: "AKIAJF2HA4UIIKP4S3RQ"
+#s3_secret: "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"
 s3_bucket: pagc-production
-cloudfront_distribution_id: E3JGF6ENSDMP1U
+# cloudfront_distribution_id: E3JGF6ENSDMP1U
 
 # set session_token if using temporary credentials with a session token (eg: when assuming a role)
 # session_token: YOUR_AWS_S3_SESSION_TOKEN

@@ -10,4 +10,6 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', '1.2.0'
 end
 
+gem 'html-proofer'
+
 gem 's3_website'
