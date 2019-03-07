@@ -18,25 +18,28 @@ slides:
       {% endfor %}
   </div>
 </header>
+{% include slider.html name="homepage_carousel" data=page.slides %}
+
 <section class="hero">
   <div class="text-container">
-    <h1 class="editable"><strong>Redefining Fair Trade Coffee</strong></h1>
+    <h1 class="editable"><strong>Reinventing Fair Trade Coffee</strong></h1>
     <!-- <p class="subtext editable">Some subtext</p> -->
     <!-- <div class="cta button alt"><a href="/sign-up/">Some link</a></div> -->
 
   </div>
 </section>
-{% include slider.html name="homepage_carousel" data=page.slides %}
 
 <section class="testimonial">
   <div class="container flex">
     <div class="testimonial-block">
-      <div class="square-image"><img src="https://source.unsplash.com/6anudmpILw4/600x400" alt="Jim James" class="editable" /></div>
+      <!-- <div class="square-image"><img src="https://source.unsplash.com/6anudmpILw4/600x400" alt="Jim James" class="editable" /></div> -->
       <blockquote>
         <p class="editable">
-          A quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote qupte period
+        COFFEE IS INEXTRICABLY BOUND UP IN A HISTORY OF INEQUITY.
         </p>
-        <p class="editable author">Author of quote - CEO of something</p>
+        <p class="editable author">
+        Uncommon Grounds: The History of Coffee and How It Transformed Our World
+        </p>
       </blockquote>
     </div>
   </div>
@@ -46,11 +49,25 @@ slides:
   <section>
     <div class="container flex">
       <div class="text editable">
-        <h2>pagPropina</h2>
-        <p>Our unique approach to bringing a mobile payments platform to Colombia starts with philanthropy. With our app coffee drinkers worldwide will be able to send a tip, or a propina in Spanish, directly to the farmer and laborers who brought the coffee from seed to cup. We are establishing pension accounts in a partnership with Colpensiones, a division of the Ministry of Labor, for the farmers and workers of Colombia. The pagPropina tip will be deposited directly into the pension accounts, which will provide compound returns in much the same way as the trees that continuously harvest coffee in Colombia all year-round. Inequities remain a sad reality in the coffee world. A single Arabica coffee tree can produce beans for up to 100 years, but the farmers and laborers in Colombia still struggle to feed their families from harvest to harvest. Our technology will disrupt the Fair Trade model and provide a self-sustaining alternative.</p>
+        <h2>
+          <img class="landing-page-section-header-logo" src="{{site.baseurl}}/images/logo_pagpropina.png" alt="PagPropina" class="editable" />
+        </h2>
+        <p>
+          Our unique approach to bringing a mobile payments platform to Colombia
+          starts with philanthropy. With our app coffee drinkers worldwide will
+          be able to send a tip, or a propina in Spanish, directly to the farmer
+          and laborers who brought the coffee from seed to cup. We are
+          establishing pension accounts in a partnership with Colpensiones, a
+          division of the Ministry of Labor, for the farmers and workers of
+          Colombia. The pagPropina tip will be deposited directly into the
+          pension accounts, which will provide compound returns in much the same
+          way as the trees that continuously harvest coffee in Colombia all
+          year-round.
+          <a href="{{site.baseurl}}/pagpropina">Read More</a>
+        </p>
       </div>
       <div class="image">
-        <img src="{{site.baseurl}}/images/logo_pagpropina.png" alt="PagPropina" class="editable" />
+        <img src="{{site.baseurl}}/images/jungle.jpg" alt="PagPropina" class="editable" />
       </div>
     </div>
   </section>
@@ -58,11 +75,27 @@ slides:
   <section>
     <div class="container flex">
       <div class="text editable">
-        <h2>pagCafe</h2>
-        <p>More than 80% of growers use mobile devices for WhatsApp, Facebook and video. Many have discovered the benefit of forward purchase agreements and electronic transfers, but a vast amount of transactions in the 3rd largest coffee producing nation in the world remains all cash. In many cases growers send samples to Bogot&aacute; only to wait weeks to know if their coffee has been sold and even longer to receive payment. As we speak, Colombian growers are being forced to sell beans well below their cost of production, exacerbating demands on working capital and perpetuating inequality. Our targeted payments platform will allow growers to promptly receive payment, manage inventory, control labor costs and lower their cost of production, which remains one of the most acute issues facing Colombian growers in the coffee crisis of 2019. Our partnerships with the 3rd largest coffee exporter in the world, one of the largest coffee farms in Colombia and many influential buyers in the United States and Europe provide a unique strategic advantage and short runway to scalability.</p>
+        <h2>
+          <img class="landing-page-section-header-logo" src="{{site.baseurl}}/images/logo_pagcafe.png" alt="PagCaf&eacute;" class="editable" />
+        </h2>
+        <p>
+          More than 80% of growers use mobile devices for WhatsApp, Facebook and
+          video. Many have discovered the benefit of forward purchase agreements
+          and electronic transfers, but a vast amount of transactions in the 3rd
+          largest coffee producing nation in the world remains all cash. In many
+          cases growers send samples to Bogot&aacute; only to wait weeks to know
+          if their coffee has been sold and even longer to receive payment. As
+          we speak, Colombian growers are being forced to sell beans well below
+          their cost of production, exacerbating demands on working capital and
+          perpetuating inequality. Our targeted payments platform will allow
+          growers to promptly receive payment, manage inventory, control labor
+          costs and lower their cost of production, which remains one of the most
+          acute issues facing Colombian growers in the coffee crisis of 2019.
+          <a href="{{site.baseurl}}/pagcafe">Read More</a>
+        </p>
       </div>
       <div class="image">
-        <img src="{{site.baseurl}}/images/logo_pagcafe.png" alt="PagCaf&eacute;" class="editable" />
+        <img src="{{site.baseurl}}/images/jungle.jpg" alt="PagCaf&eacute;" class="editable" />
       </div>
     </div>
   </section>
@@ -98,7 +131,7 @@ slides:
         <p>Our passion for coffee and the people of Colombia drives our desire to make the coffee producing world a better place. Our goal is not only to disrupt the fragmented global supply chain, but also to reimagine the flawed concept of Fair Trade coffee. With technology, creativity and philanthropy, we can provide a sustainable solution that will cultivate a better quality of life for the growers and laborers of Colombia. Our model will not only sustain the producing countries, but also add value to others along the value chain as we unlock information and provide a comprehensive value-added approach. Private enterprise should lead the way in making the world a better place. Through PagPropina, Cosecha and eventually, the Grupo Crawford Cafetero Fund, we will plant the seeds for a long-lasting, sustainable alternative to Fair Trade coffee.</p>
       </div>
       <div class="image">
-        <img src="/images/thumb_crawford.jpg" alt="Mission" class="editable" />
+        <img src="/images/jungle.jpg" alt="Mission" class="editable" />
       </div>
     </div>
   </section>

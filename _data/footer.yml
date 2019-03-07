@@ -3,10 +3,12 @@
     link: /privacy/
   - name: Join Our Team
     link: /hiring/
-  - name: About
+  - name: About Us
     link: /about/
   - name: Contact
     link: /contact/
+  - name: Cosecha
+    link: /#/
 - links:
   - name: Facebook
     link: https://facebook.com
